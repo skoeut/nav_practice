@@ -22,7 +22,7 @@
       <div class="logo">ThinkfulCupid</div>
       <nav>
         <ul id="menu">
-          <li><a>Join</a></li>
+          <li><a>Test</a></li>
           <li><a>About</a></li>
           <li><a>Download</a></li>
           <li><a>Blog</a></li>
@@ -37,43 +37,24 @@
         <!-- Add join form here -->
         <div>
           <h2>Find your perfect match</h2>
-          <form action="test">
-            <p class="form-line">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="join_form_email"
-                placeholder="email@example.com"
-              />
-            </p>
-            <p class="form-line">
-              <label for="password">Create a Password</label>
-              <input
-                type="password"
-                id="password"
-                name="joinform_password"
-              />
-            </p>
-            <p class="form-line">
-              <label for="username">Username</label>
-              <input type="text" id="username" name="joinform_username" />
-            </p>
-            <p class="form-line">
-              <label for="gender">I am a...</label>
-              <select id="gender" name="joinform_gender">
-                <option value="female">female</option>
-                <option value="male">male</option>
-                <option value="non-binary">non-binary</option>
-              </select>
-            </p>
-            <p>
-              <button type="button">Join!</button>
-            </p>
+          <form action="process-form" method="post">
+            <div> 
+            <label for="first_name"> First Name</label>
+            <input id="first_name" type="text" name="name"/>
+            </div>
+            <div>
+              <label for="last_name"> Last Name</label>
+              <input id="last_name" type="text" name="name"/>
+            </div>
+            <div>
+              <label for="email"> Email Address</label>
+              <input id="email" type="text" name="email"/>
+            </div>
+            <div>
+              <button type="submit">Join!</button>
+            </div>
           </form>
         </div>
-      </div>
-    </div>
       </section>
 
       <!-- About -->
